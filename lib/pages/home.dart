@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:pie_chart/pie_chart.dart';
 
 import 'package:band_name/models/band.dart';
 import 'package:band_name/services/socket_service.dart';
@@ -67,16 +66,9 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          _showGraph(),
-          Expanded(
-            child: ListView.builder(
-                itemCount: bands.length,
-                itemBuilder: (context, i) => _bandTile(bands[i])),
-          )
-        ],
-      ),
+      body: ListView.builder(
+          itemCount: bands.length,
+          itemBuilder: (context, i) => _bandTile(bands[i])),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add), elevation: 1, onPressed: addNewBand),
     );
@@ -175,7 +167,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   // Mostrar grafica
-  Widget _showGraph() {
+  /*Widget _showGraph() {
     Map<String, double> dataMap = new Map();
     // dataMap.putIfAbsent('Flutter', () => 5);
     bands.forEach((band) {
@@ -192,7 +184,7 @@ class _HomePageState extends State<HomePage> {
     ];
 
     return Container(
-        padding: EdgeInsets.only(top: 10),
+        padding: EdgeInsets.only(top: 20),
         width: double.infinity,
         height: 200,
         child: PieChart(
@@ -207,5 +199,5 @@ class _HomePageState extends State<HomePage> {
           decimalPlaces: 0,
           chartType: ChartType.disc,
         ));
-  }
+  }*/
 }

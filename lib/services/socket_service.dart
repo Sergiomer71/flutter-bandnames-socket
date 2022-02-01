@@ -21,7 +21,8 @@ class SocketService with ChangeNotifier {
 
   void _initConfig() {
     // Dart client
-    this._socket = IO.io('http://localhost:3000', {
+    this._socket =
+        IO.io('https://flutter-socket-server-sergio.herokuapp.com/', {
       // this._socket = IO.io('http://192.168.0.107:3000', {
       //IO.Socket socket = IO.io('http://192.168.0.107:3000', {
       'transports': ['websocket'],
