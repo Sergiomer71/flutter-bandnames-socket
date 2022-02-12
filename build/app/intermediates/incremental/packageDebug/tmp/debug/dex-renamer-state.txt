@@ -1,4 +1,7 @@
-#Thu Feb 10 21:04:40 ART 2022
+#Thu Feb 10 22:46:14 ART 2022
 base.0=C\:\\flutter\\Flutter-II\\copia-haciendo\\band_name\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\flutter\\Flutter-II\\band_name\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
